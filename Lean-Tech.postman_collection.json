@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "cdebc003-7c26-4fc2-9c9f-e4402f0f8362",
+		"name": "Lean-Tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": \"2021-05-08T22:59:50.885Z\",\n    \"cantidad\": 24,\n    \"idProducto\": \"AB20\",\n    \"nombreProducto\": \"producto 20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/orders/registrar-compra",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"orders",
+						"registrar-compra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sell",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": \"2021-05-08T22:59:50.885Z\",\n    \"cantidad\": 24,\n    \"idProducto\": \"AB20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/api/orders/registrar-venta",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						"orders",
+						"registrar-venta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
