@@ -54,20 +54,20 @@ Business Rules
 #### Stock table
                     
 _id  | stock | idProducto | nombreProducto
-------------- | -------------
+------------- | ------------- | ------------- | ------------- 
 ObjectID  | number  | string | string 
 
 #### BuyOrders table
                     
 _id  | fecha | cantidad | idProducto | nombreProducto
-------------- | -------------
+------------- | ------------- | ------------- | ------------- | ------------- 
 ObjectID  | date  | number | string | string 
 
 
 #### SellOrders table
                     
 _id  | fecha | cantidad | idProducto | nombreProducto
-------------- | -------------
+------------- | ------------- | ------------- | ------------- | ------------- 
 ObjectID  | date  | number | string | string 
 
 
