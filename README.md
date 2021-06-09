@@ -23,19 +23,23 @@ API
 The base route for the API is `/api`
 
 - POST /api/orders/registrar-compra
-		{
-		"fecha": "2021-05-08T22:59:50.885Z",
-		"cantidad": 24,
-		"idProducto": "AB20",
-		"nombreProducto": "producto 20"
-		}
-- POST /api/orders/registrar-venta
-		{
-			"fecha": "2021-05-08T22:59:50.885Z",
-			"cantidad": 24,
-			"idProducto": "AB20"
-		}
+```
+{
+"fecha": "2021-05-08T22:59:50.885Z",
+"cantidad": 24,
+"idProducto": "AB20",
+"nombreProducto": "producto 20"
+}
+```
 
+- POST /api/orders/registrar-venta
+```
+{
+	"fecha": "2021-05-08T22:59:50.885Z",
+	"cantidad": 24,
+	"idProducto": "AB20"
+}
+```
 
 Business Rules
 -------------
@@ -45,7 +49,7 @@ Business Rules
 - You can not buy more than 30 products in a same month.
 - You can not register buys and sells with 0 value.
 
-###Database schema
+### Database schema
 
 #### Stock table
                     
