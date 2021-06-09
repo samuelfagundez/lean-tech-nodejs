@@ -35,9 +35,9 @@ The base route for the API is `/api`
 - POST /api/orders/registrar-venta
 ```
 {
-	"fecha": "2021-05-08T22:59:50.885Z",
-	"cantidad": 24,
-	"idProducto": "AB20"
+"fecha": "2021-05-08T22:59:50.885Z",
+"cantidad": 24,
+"idProducto": "AB20"
 }
 ```
 
